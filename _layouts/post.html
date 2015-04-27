@@ -1,0 +1,19 @@
+---
+layout: html
+---
+
+{% capture extraheader %}
+<div id="post-metadata" class="post-metadata">
+	Posted {{ page.date | date: "%A, %Y %B %d" }}
+	by {{ page.author }}
+	in {% include taglist.html %}
+</div>
+{% endcapture %}
+
+{% include header.html extra=extraheader %}
+
+<article>
+{{ content }}
+</article>
+
+{% include prevnext.html %}

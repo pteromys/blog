@@ -1,0 +1,31 @@
+---
+layout: html
+tags: [code, math]
+---
+
+{% capture extraheader %}
+Andrew Geng's blog.
+{% endcapture %}
+
+{% include header.html extra=extraheader %}
+
+Tags: {% include taglist.html %}
+
+{% comment %}
+	Liquid 3.0.0 will allow the output HTML to be slightly prettier.
+	See: https://github.com/Shopify/liquid/pull/324
+{% endcomment %}
+
+{% for post in site.posts %}
+	{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+	{% unless year == saved_year %}
+		{% unless forloop.first %}</ul>{% endunless %}
+		{% assign saved_year = year %}
+		<h2>{{ year }}</h2>
+		<ul>
+	{% endunless %}
+	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+{% if site.posts != empty %}
+	</ul>
+{% endif %}

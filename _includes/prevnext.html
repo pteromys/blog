@@ -1,0 +1,8 @@
+<div class="siblings">
+{% if page.next %}
+	{% include sibling_link.html dest=page.next label="Newer" %}
+{% endif %}
+{% if page.previous %}
+	{% include sibling_link.html dest=page.previous label="Older" %}
+{% endif %}
+</div>
