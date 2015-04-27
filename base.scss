@@ -16,14 +16,14 @@
 
 /* Theme */
 h1 { color: #00005f; }
-h2, h4, h6 { color: #7f7f8f; }
-h3, h5 { color: #bf7fff; }
+h2, h4, h6 { color: #7f7faf; border-color: rgba(127, 127, 159, 0.5); }
+h3, h5 { color: #9f7fef; }
 html { color: #000000; background: #7fbfff; }
 body { color: #000000; background: #ffffff; }
-a:link { color: #0000ff; }
+a:link { color: #0000cf; }
 a:visited { color: #7f007f; }
-a:hover { color: #7fbfff; }
-a:active { color: #ffbf00; }
+a:hover { color: #007fff; }
+a:active { color: #ff9f00; }
 @media only screen {
 	body::before {
 		display: block;
@@ -155,14 +155,11 @@ article {
 }
 .iconlinks {
 	float: right;
-	color: #007fff;
 	a {
-		color: inherit;
 		font-size: 150%;
 		padding: 0.25em;
 		opacity: 0.5;
-		&:hover { opacity: 1; }
-		transition: opacity 0.1s;
+		transition: color 0.2s;
 	}
 }
 #homelink {
