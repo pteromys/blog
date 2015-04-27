@@ -1,0 +1,28 @@
+# Site metadata
+title: The Eigenschlumpkin Herder
+description: > # ignore until next entry
+  Andrew Geng's blog, a space for notes on math and other subjects
+  in slightly more depth than achieveable on social media sites.
+# Front matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      title: "The Eigenschlumpkin Herder"
+      author: "Andrew Geng"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# For consistency between `jekyll serve` and live version
+# http://jekyllrb.com/docs/github-pages/#project-page-url-structure
+baseurl: "/w"
+
+# Permalink scheme
+permalink: /:year/:title/
+
+# vim: set et ts=2 sts=2 sw=2:
