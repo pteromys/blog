@@ -127,6 +127,11 @@ body { margin: 0em auto; padding: 1em; }
 			border-top: 0.75em solid transparent;
 			border-bottom: 0.75em solid transparent;
 			margin-top: -0.25em;
+			box-shadow: 0em 0em 1em 0em rgba(255, 255, 255, 0.5);
+			transition: box-shadow 0.5s;
+		}
+		a.newer:hover:before, a.older:hover:after {
+			box-shadow: 0em 0em 2em 0em rgba(255, 255, 255, 0.8);
 		}
 		a.newer {
 			margin-left: -2em;
@@ -141,12 +146,14 @@ body { margin: 0em auto; padding: 1em; }
 			border-right: 0.4em solid rgba(255, 255, 255, 0.8);
 			margin-left: -0.35em;
 			margin-right: 0.5em;
+			border-radius: 0.4em 0em 0em 0.4em / 0.75em 0em 0em 0.75em;
 		}
 		a.older:after {
 			border-left: 0.4em solid #ffffff;
 			border-left: 0.4em solid rgba(255, 255, 255, 0.8);
 			margin-left: 0.5em;
 			margin-right: -0.4em;
+			border-radius: 0em 0.4em 0.4em 0em / 0em 0.75em 0.75em 0em;
 		}
 	}
 }
