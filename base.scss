@@ -1,7 +1,7 @@
 ---
 ---
 @import url('{{ site.baseurl }}/icons/webfont.css');
-@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic);
+@import url('{{ site.baseurl }}/fonts/fonts.css');
 
 @mixin vertical-gradient($prop, $top, $bottom) {
 	#{$prop}: -webkit-linear-gradient(90deg, $bottom, $top);
@@ -49,9 +49,9 @@ a:active { color: #ff9f00; }
 
 /* Font settings */
 body { line-height: 1.5; }
-body { font-family: 'Quattrocento Sans', Arial, sans-serif, sans; }
-h1, h2, h3, h4, h5, h6 { font-family: serif; line-height: 1.2; margin-bottom: 0.5em; }
-h1, h2 { font-weight: 300; }
+body { font-family: 'Linux Biolinum', Arial, sans-serif, sans; }
+h1, h2, h3, h4, h5, h6 { font-family: Essays1743, serif; line-height: 1.2; margin-bottom: 0.5em; }
+h1, h2 { font-weight: normal; }
 h3, h4, h5, h6 { font-weight: bold; }
 
 /* Elements */
