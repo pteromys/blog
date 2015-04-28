@@ -17,3 +17,12 @@ layout: html
 </article>
 
 {% include prevnext.html %}
+
+{% if page.googlepost %}
+<div class="gplusembedded">
+<div class="g-post" data-href="https://plus.google.com/{{ page.googlepost }}">
+	<div class="gplusreplaced">Comments failed to load? <a href="https://plus.google.com/{{ page.googlepost }}">View the thread on Google+</a>.</div>
+</div>
+</div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+{% endif %}

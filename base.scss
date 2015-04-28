@@ -113,6 +113,14 @@ body { margin: 0em auto; padding: 1em; }
 	display: inline-block;
 	min-width: 6em; text-align: right;
 }
+.gplusembedded {
+	clear: both;
+	text-align: center;
+}
+.gplusreplaced {
+	font-weight: bold;
+	color: #bf0000;
+}
 .siblings {
 	font-size: 90%;
 	margin: 1.5em 0em;
