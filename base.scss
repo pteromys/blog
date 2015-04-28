@@ -101,7 +101,10 @@ body { margin: 0em auto; padding: 1em; }
 	color: rgba(0, 0, 0, 0.5);
 }
 .siblings {
+	font-size: 90%;
+	margin: 1.5em 0em;
 	clear: both;
+	&:after { content: ""; display: block; clear: both; }
 	a.newer {
 		float: left;
 		&:before { content: "\00ab"; }
@@ -109,6 +112,11 @@ body { margin: 0em auto; padding: 1em; }
 	a.older {
 		float: right;
 		&:after { content: "\00bb"; }
+	}
+	a.newer:before, a.older:after {
+		font-family: NutIcons, sans;
+		display: inline-block; vertical-align: middle; text-decoration: none;
+		width: 1em; height: 1em; line-height: 1em;
 	}
 	/* Protruding "Older" and "Newer" links. */
 	@media only screen and (min-width: 56em) {
@@ -122,39 +130,31 @@ body { margin: 0em auto; padding: 1em; }
 			background-repeat: no-repeat;
 		}
 		a.newer:before, a.older:after {
-			content: ""; width: 0em; height: 0em;
-			display: inline-block; vertical-align: top;
-			border-top: 0.75em solid transparent;
-			border-bottom: 0.75em solid transparent;
-			margin-top: -0.25em;
-			box-shadow: 0em 0em 1em 0em rgba(255, 255, 255, 0.5);
-			transition: box-shadow 0.5s;
+			font-size: 200%;
+			position: relative;
+			margin-top: -0.5em; margin-bottom: -0.5em;
+			opacity: 0; color: #ffffff;
+			text-shadow: 0em 0.05em 0.6em rgba(207, 207, 255, 1);
+			transition: left 0s 0.5s, opacity 0.5s;
 		}
 		a.newer:hover:before, a.older:hover:after {
-			box-shadow: 0em 0em 2em 0em rgba(255, 255, 255, 0.8);
+			opacity: 1;
+			transition: left 0.5s, opacity 0.5s;
 		}
 		a.newer {
 			margin-left: -2em;
 			background-position: left;
+			border-radius: 0.4em 0em 0em 0.4em / 0.75em 0em 0em 0.75em;
 		}
 		a.older {
 			margin-right: -2em;
 			background-position: right;
-		}
-		a.newer:before {
-			border-right: 0.4em solid #ffffff;
-			border-right: 0.4em solid rgba(255, 255, 255, 0.8);
-			margin-left: -0.35em;
-			margin-right: 0.5em;
-			border-radius: 0.4em 0em 0em 0.4em / 0.75em 0em 0em 0.75em;
-		}
-		a.older:after {
-			border-left: 0.4em solid #ffffff;
-			border-left: 0.4em solid rgba(255, 255, 255, 0.8);
-			margin-left: 0.5em;
-			margin-right: -0.4em;
 			border-radius: 0em 0.4em 0.4em 0em / 0em 0.75em 0.75em 0em;
 		}
+		a.newer:before { left: 0em; margin-right: -0.75em; }
+		a.newer:hover:before { left: -1em; }
+		a.older:after { left: 0em; margin-left: -0.75em; }
+		a.older:hover:after { left: 1em; }
 	}
 }
 article {
@@ -192,7 +192,6 @@ footer {
 @media only screen {
 	body {
 		overflow: auto;
-		padding-bottom: 3em;
 	}
 	footer {
 		position: absolute;
