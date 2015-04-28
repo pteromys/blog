@@ -22,9 +22,9 @@ Tags: {% include taglist.html %}
 		{% unless forloop.first %}</ul>{% endunless %}
 		{% assign saved_year = year %}
 		<h2>{{ year }}</h2>
-		<ul>
+		<ul class="post-list">
 	{% endunless %}
-	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+	{% include post_li.html post=post %}
 {% endfor %}
 {% if site.posts != empty %}
 	</ul>

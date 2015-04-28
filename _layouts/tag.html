@@ -6,10 +6,10 @@ layout: html
 
 {{ content }}
 
-<ul>
+<ul class="post-list">
 {% for post in site.posts %}
 {% if post.tags contains page.tagname %}
-<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+	{% include post_li.html post=post %}
 {% endif %}
 {% endfor %}
 </ul>

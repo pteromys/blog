@@ -24,6 +24,7 @@ a:link { color: #0000cf; }
 a:visited { color: #7f007f; }
 a:hover { color: #007fff; }
 a:active { color: #ff9f00; }
+.post-metadata, .post-date { color: #7f7f8f; }
 @media only screen {
 	body::before {
 		display: block;
@@ -98,7 +99,19 @@ body { margin: 0em auto; padding: 1em; }
 .post-metadata {
 	margin-left: 2em;
 	font-size: 90%;
-	color: rgba(0, 0, 0, 0.5);
+}
+.post-list {
+	list-style-type: none;
+	padding-left: 0em;
+	li {
+		padding-left: 2em;
+		text-indent: -2em;
+	}
+}
+.post-date {
+	font-size: 90%;
+	display: inline-block;
+	min-width: 6em; text-align: right;
 }
 .siblings {
 	font-size: 90%;
