@@ -1,1 +1,3 @@
-<li><span class="post-date">{{ include.post.date | date: '%a %b %d' }}</span> &middot; <a href="{{ site.baseurl }}{{ include.post.url }}">{{ include.post.title }}</a></li>
+{% assign date_format = '%a %b %d' %}
+{% if include.date_format %}{% assign date_format = include.date_format %}{% endif %}
+<li><span class="post-date">{{ include.post.date | date: date_format }}</span> &middot; <a href="{{ site.baseurl }}{{ include.post.url }}">{{ include.post.title }}</a></li>

@@ -9,7 +9,7 @@ layout: html
 <ul class="post-list">
 {% for post in site.posts %}
 {% if post.tags contains page.tagname %}
-	{% include post_li.html post=post %}
+	{% include post_li.html post=post date_format='%Y %b %d' %}
 {% endif %}
 {% endfor %}
 </ul>
