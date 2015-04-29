@@ -16,16 +16,22 @@ Tags: {% include taglist.html %}
 	See: https://github.com/Shopify/liquid/pull/324
 {% endcomment %}
 
-{% for post in site.posts %}
-	{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-	{% unless year == saved_year %}
-		{% unless forloop.first %}</ul>{% endunless %}
-		{% assign saved_year = year %}
-		<h2>{{ year }}</h2>
-		<ul class="post-list">
-	{% endunless %}
+{% if site.posts == empty %}
+(No entries yet.)
+{% else %}
+<h2><a class="disguised" href="{{ site.baseurl }}{{ site.posts[0].url }}">Newest: {{ site.posts[0].title }}</a></h2>
+{{ site.posts[0].excerpt }}
+<p><a href="{{ site.baseurl }}{{ site.posts[0].url }}">Read more&hellip;</a></p>
+{% endif %}
+
+{% if site.posts.size > 1 %}
+<h2>Other recent posts</h2>
+<ul class="post-list">
+{% for post in site.posts limit:3 offset:1 %}
 	{% include post_li.html post=post %}
 {% endfor %}
-{% if site.posts != empty %}
-	</ul>
+{% if site.posts.size > 4 %}
+<li><a href="{{ site.baseurl }}/archive.html">More posts&hellip;</a></li>
+{% endif %}
+</ul>
 {% endif %}
