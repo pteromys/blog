@@ -2,6 +2,7 @@
 title: Sol geometry and the tangent bundle of a hyperbola
 mathjax: On
 tags: math
+googlepost: 101956452641381748248/posts/ZcKdxXLXX2Q
 localscripts: ["/scripts/hammer-2.0.4.min.js", "/scripts/jquery-1.11.3.min.js"]
 ---
 
