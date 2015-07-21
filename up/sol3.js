@@ -106,6 +106,7 @@ $(document).ready((function (CANVAS) {
 		e.preventDefault();
 		draw(x, -y, true);
 	}
+	$(CANVAS).css('cursor', 'default');
 	var h = new Hammer.Manager($(CANVAS)[0]);
 	h.add(new Hammer.Pan({direction: Hammer.DIRECTION_ALL, threshold: 0, pointers: 0}));
 	h.on('pan', handlePan);

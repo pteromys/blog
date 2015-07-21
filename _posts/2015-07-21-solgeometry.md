@@ -40,8 +40,6 @@ shrinks them by the same factor in the other.
 
 <script type="text/javascript" src="{{ site.baseurl }}/up/sol3.js" data-canvas="#fig_sol3"></script>
 
-<!-- \\cong \\R^2 \\underset{\\left(\\begin{smallmatrix} e^t & \\\\ & e^{-t} \\end{smallmatrix}\\right)}{\\rtimes} \\R \\). -->
-
 We are interested in the action of \\(\\Sol^3\\) on the tangent bundle
 \\(T\\H^1\\) of one branch of a hyperbola.
 
