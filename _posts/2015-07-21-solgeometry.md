@@ -73,7 +73,7 @@ you can check that this action is given by
 Were we hoping to preserve either in \\(T\\H^1\\),
 we'd be out of luck---the stabilizer of \\((0,0)\\) consists of maps
 \\[
-(p,q) \\overset{(0,x,0)}{\\mapsto} (p - x \\sinh q, q) ,
+(p,q) \\overset{(x,0,0)}{\\mapsto} (p - x \\sinh q, q) ,
 \\]
 whose action on the tangent space \\(T\_{(0,0)}(T\\H^1)\\) is by matrices
 \\[ \\begin{pmatrix} 1 & \* \\\\ & 1 \\end{pmatrix}. \\]
