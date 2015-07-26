@@ -18,6 +18,8 @@ defaults:
     values:
       layout: "post"
 
+# RSS feed requires absolute URLs
+url: "https://pteromys.github.io"
 # For consistency between `jekyll serve` and live version
 # http://jekyllrb.com/docs/github-pages/#project-page-url-structure
 baseurl: "/w"
