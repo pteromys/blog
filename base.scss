@@ -99,7 +99,41 @@ figcaption {
 		font-variant: small-caps;
 	}
 }
+table {
+	margin: 0.5em auto;
+	border-spacing: 0em;
+	border-collapse: collapse;
+}
+td, th {
+	border: 1px solid #000;
+	padding: 0.1em 0.5em;
+}
 .tex-macros { display: none; }
+
+/* Me-specific things*/
+%showcase {
+	display: inline-block; vertical-align: middle;
+	padding: 0.5em;
+	background: #bfdfff;
+}
+.demo-link {
+	text-align: center;
+	a, img { border: 1px solid #7fbfff; }
+	img { width: 4em; height: 4em; margin-right: 0.5em; }
+	a {
+		@extend %showcase;
+		font-weight: bold;
+		text-decoration: none;
+		color: #000;
+		&:hover {
+			background: #dfefff;
+		}
+	}
+}
+.demo-text {
+	display: inline-block; vertical-align: middle;
+	&:first-line { font-variant: small-caps; }
+}
 
 /* Page dimensions */
 html { margin: 0em; padding: 0em; }
@@ -118,6 +152,7 @@ body { margin: 0em auto; padding: 1em; }
 }
 
 /* Blog-specific elements */
+#markdown-toc li { margin-bottom: 0em; }
 .post-metadata {
 	margin-left: 2em;
 	font-size: 90%;
