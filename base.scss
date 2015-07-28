@@ -276,18 +276,11 @@ article {
 	box-shadow: 0em 0em 4em 0em rgba(255, 255, 255, 0.8);
 }
 footer {
+	font-size: 90%;
+	margin: 1.5em 0em;
+	clear: both;
 	text-align: center;
 	opacity: 0.7;
-}
-@media only screen {
-	body {
-		overflow: auto;
-	}
-	footer {
-		position: absolute;
-		bottom: -1em; left: 0em; right: 0em;
-		padding: 0em 1em;
-	}
 }
 
 /* Syntax highlighting */
