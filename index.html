@@ -21,6 +21,9 @@ Tags: {% include taglist.html %}
 (No entries yet.)
 {% else %}
 <h2><a class="disguised" href="{{ site.baseurl }}{{ site.posts[0].url }}">Newest: {{ site.posts[0].title }}</a></h2>
+{% if site.posts[0].thumbnail %}
+<a class="post-thumbnail" href="{{ site.baseurl }}{{ site.posts[0].url }}"><img src="{{ site.baseurl }}{{ site.posts[0].thumbnail }}" alt="Post thumbnail" /></a>
+{% endif %}
 {{ site.posts[0].excerpt | replace: '<h2', '<h3' | replace: '/h2>', '/h3>' }}
 <p><a href="{{ site.baseurl }}{{ site.posts[0].url }}">Read more&hellip;</a></p>
 {% endif %}
