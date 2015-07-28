@@ -21,6 +21,7 @@ particularly pretty example using Thurston's Sol geometry.
 \\newcommand{\\SO}{\\operatorname{SO}}
 \\newcommand{\\Sol}{\\operatorname{Sol}}
 \\)
+{:.tex-macros}
 
 ## Setup
 
