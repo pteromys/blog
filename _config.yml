@@ -10,13 +10,14 @@ defaults:
       path: ""
     values:
       title: "The Eigenschlumpkin Herder"
-      author: "Andrew Geng"
+      author: "pteromys"
   -
     scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+      schema: "BlogPosting"
 
 # RSS feed requires absolute URLs
 url: "https://pteromys.github.io"

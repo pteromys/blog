@@ -12,6 +12,8 @@ hope that it respects some structure in the lower-dimensional space.
 Unfortunately this is guaranteed for neither distances nor angles.
 Here are some pictures---one of which is interactive (!)---for a
 particularly pretty example using Thurston's Sol geometry.
+{:itemprop="description"}
+
 \\(
 \\newcommand{\\R}{\\mathbb{R}}
 \\newcommand{\\H}{\\mathbb{H}}
@@ -32,7 +34,7 @@ shrinks them by the same factor in the other.
 {::nomarkdown}
 <figure>
 <canvas id="fig_sol3" width="256" height="256" style="border: 1px solid #000;">
-<img src="{{ site.baseurl }}/up/sol3-thumb.png" alt="Sol3 is a stack of planes." />
+<img itemprop="image" src="{{ site.baseurl }}/up/sol3-thumb.png" alt="Sol3 is a stack of planes." />
 </canvas>
 <figcaption>\(\Sol^3\) is a stack of planes. (Interactive)</figcaption>
 </figure>

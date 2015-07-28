@@ -1,0 +1,7 @@
+<span itemprop="author" itemscope="" itemtype="//schema.org/Person"><span itemprop="name">
+{% if site.data.people[include.author] %}
+	<a href="https://plus.google.com/{{ site.data.people[include.author].googleplus }}" itemprop="url" rel="author">{{ site.data.people[include.author].name }}</a>
+{% else %}
+	{{ include.author }}
+{% endif %}
+</span></span>

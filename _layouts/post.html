@@ -4,15 +4,15 @@ layout: html
 
 {% capture extraheader %}
 <div id="post-metadata" class="post-metadata">
-	Posted {{ page.date | date: "%A, %Y %B %d" }}
-	by {{ page.author }}
+	Posted <time datetime="{{ page.date | date: "%Y-%m-%d"}}" itemprop="datePublished">{{ page.date | date: "%A, %Y %B %d" }}</time>
+	by {% include author.html author=page.author %}
 	in {% include taglist.html %}
 </div>
 {% endcapture %}
 
 {% include header.html extra=extraheader %}
 
-<article>
+<article itemprop="articleBody">
 {{ content }}
 </article>
 

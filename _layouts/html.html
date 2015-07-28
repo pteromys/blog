@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body>
+<body{% if page.schema %} itemscope itemtype="//schema.org/{{ page.schema }}"{% endif %}>
 
 {{ content }}
 
