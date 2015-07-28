@@ -27,7 +27,7 @@ $(document).ready((function (CANVAS) {
 		var visible;
 		var t = 0;
 		var last = p[i];
-		for (i = start + 1; i != start; i = (i + 1) % p.length) {
+		for (i = start + 1; /* see below */; i = (i + 1) % p.length) {
 			visible = (p[i][2] > NEAR);
 			// If crossing the NEAR plane, push its intersection point.
 			if (visible ^ last_visible) {
@@ -39,6 +39,7 @@ $(document).ready((function (CANVAS) {
 			}
 			last_visible = visible;
 			last = p[i];
+			if (i == start) { break; }
 		}
 		return ans;
 	}
@@ -50,7 +51,6 @@ $(document).ready((function (CANVAS) {
 		for (var i = 0; i < p.length; i++) {
 			context.lineTo(p[i][0]/p[i][2], p[i][1]/p[i][2]);
 		}
-		context.closePath();
 	}
 	function drawPlane(context, height, y) {
 		var s = Math.exp(height - y);
