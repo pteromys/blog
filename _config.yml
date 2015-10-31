@@ -20,7 +20,7 @@ defaults:
       schema: "BlogPosting"
 
 # RSS feed requires absolute URLs
-url: "https://pteromys.github.io"
+url: "http://pteromys.melonisland.net"
 # For consistency between `jekyll serve` and live version
 # http://jekyllrb.com/docs/github-pages/#project-page-url-structure
 baseurl: "/w"
