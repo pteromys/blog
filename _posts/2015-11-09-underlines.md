@@ -1,7 +1,7 @@
 ---
 title: A survey of underlines in HTML
 thumbnail: /up/underlines.png
-tags: code history
+tags: history
 ---
 
 So I was preparing my résumé the other day, because it's job season.
