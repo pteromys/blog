@@ -1,5 +1,5 @@
 <figure>
 <img alt="{{ include.alt }}" title="{{ include.alt }}"
 src="{% if include.url %}{{ include.url }}{% else %}{{ site.baseurl }}/up/{{ include.src }}{% endif %}"
-/><figcaption>{{ include.alt }}{% if include.by %}<br
+{{ include.imgextra }} /><figcaption>{{ include.alt }}{% if include.by %}<br
 />by {{ include.by }}{% endif %}</figcaption></figure>
