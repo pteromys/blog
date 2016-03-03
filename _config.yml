@@ -11,6 +11,7 @@ defaults:
     values:
       title: "The Eigenschlumpkin Herder"
       author: "pteromys"
+      themecolor: "#bfdfff"
   -
     scope:
       path: ""
