@@ -285,12 +285,23 @@ footer {
 
 /* Syntax highlighting */
 @import "syntax-highlighting";
-.highlight {
+pre.highlight, figure.highlight table {
 	background: rgba(255, 255, 255, 0.5);
 	border-radius: 0.5em;
-	padding: 0.5em 1em;
 	box-shadow: inset 0em 0.1em 0.5em -0.1em rgba(0, 0, 31, 0.15);
+}
+pre.highlight {
 	margin: 1em 0em;
-	> pre { margin: 0em; }
+	padding: 0.5em 1em;
+}
+figure.highlight {
+	background: transparent;
+	table, td { border-width: 0px; }
+	td { padding: 0.5em 1em; }
+	td.gutter { border-right: 1px solid rgba(127, 127, 127, 0.15); }
+	pre { margin: 0em; }
 	.lineno { color: #bfbfbf; }
+}
+td.code {
+	text-align: left;
 }
