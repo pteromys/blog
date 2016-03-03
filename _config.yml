@@ -30,7 +30,7 @@ baseurl: "/w"
 permalink: /:year/:title/
 
 # Syntax highlighting, for consistency with GitHub pages.
-highlighter: pygments
+highlighter: rouge
 kramdown:
   input: GFM
   hard_wrap: false
