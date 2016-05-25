@@ -1,4 +1,4 @@
-<figure>
+<figure{% if include.float %} class="float {{ include.float }}"{% endif %}>
 <img alt="{{ include.alt }}" title="{{ include.alt }}"
 src="{% if include.url %}{{ include.url }}{% else %}{{ site.baseurl }}/up/{{ include.src }}{% endif %}"
 {{ include.imgextra }} /><figcaption>{{ include.alt }}{% if include.by %}<br

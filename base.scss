@@ -99,6 +99,24 @@ figcaption {
 		font-variant: small-caps;
 	}
 }
+figure.float {
+	&.left10, &.right10 {
+		@media only screen and (min-width: 20em) {
+			max-width: 10em;
+			img { max-width: 10em; }
+			float: left; margin: 1em 1em 1em 0em;
+			&.right10 { float: right; margin: 1em 0em 1em 1em; }
+		}
+	}
+	&.left20, &.right20 {
+		@media only screen and (min-width: 40em) {
+			max-width: 20em;
+			img { max-width: 20em; }
+			float: left; margin: 1em 1em 1em 0em;
+			&.right20 { float: right; margin: 1em 0em 1em 1em; }
+		}
+	}
+}
 table {
 	margin: 0.5em auto;
 	border-spacing: 0em;
