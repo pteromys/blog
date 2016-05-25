@@ -3,6 +3,7 @@ title: Simplicial whatever quickstart guide
 mathjax: On
 thumbnail: /up/simplex.png
 tags: math
+googlepost: 101956452641381748248/posts/9snytGMX19z
 ---
 
 Simplicial sets are useful for... okay, I really have no idea what.
