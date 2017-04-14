@@ -25,7 +25,8 @@ Check out the way Epiphany's underline skips the descender on the "p":
 
 It turns out that a [text-decoration-skip:ink][W3TextDeco]
 has been in a Candidate Recommendation since August 2013.
-There's no support yet in [Chrome][ChromeBug] or [Gecko][GeckoBug];
+There's no support yet in ~~[Chrome][ChromeBug] or~~[^ChromeFixed]
+[Gecko][GeckoBug];
 but in November 2013, only seven months after
 [Blink forked from WebKit][BlinkBranchPoint],
 support [landed in WebKit][WebKitSkip].
@@ -49,6 +50,8 @@ the change was embraced by observers of iOS 8, it may be here to stay.
 [SkipInk]: https://css-tricks.com/almanac/properties/t/text-decoration-skip/
 [Comment11]: https://bugs.webkit.org/show_bug.cgi?id=127331#c11
 [WebKitSkipObjects]: https://bugs.webkit.org/show_bug.cgi?id=128723
+[^ChromeFixed]: Chrome support was added
+    on [November 19, 2016](https://bugs.chromium.org/p/chromium/issues/detail?id=649700).
 
 ## Non-native implementations and line thickness
 
@@ -126,3 +129,4 @@ which the SE thread can't quite claim.)
 [tablefeet]: http://tex.stackexchange.com/questions/1583/
 [postfixbody]: http://comments.gmane.org/gmane.mail.postfix.user/196733
 
+## Updates
