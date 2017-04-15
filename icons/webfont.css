@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'NutIcons';
-    src: url('font.eot');
-    src: url('font.eot?#iefix') format('embedded-opentype'),
-         url('font.woff') format('woff'),
-         url('font.ttf') format('truetype'),
-         url('font.svg#NutIcons') format('svg');
+    font-family: 'NutIcons-blog';
+    src: url('blog.eot');
+    src: url('blog.eot?#iefix') format('embedded-opentype'),
+         url('blog.woff') format('woff'),
+         url('blog.ttf') format('truetype'),
+         url('blog.svg#NutIcons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 /* Apply this font to the icon class. */
-.icon { font-family: NutIcons, sans; }
+.icon { font-family: NutIcons-blog, sans; }
