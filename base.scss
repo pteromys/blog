@@ -327,14 +327,18 @@ footer {
 
 /* Syntax highlighting */
 @import "syntax-highlighting";
-pre.highlight, figure.highlight table {
+pre.highlight, figure.highlight table, code.highlighter-rouge {
 	background: rgba(255, 255, 255, 0.5);
 	border-radius: 0.5em;
 	box-shadow: inset 0em 0.1em 0.5em -0.1em rgba(0, 0, 31, 0.15);
 }
+code.highlighter-rouge {
+	padding: 0.25em 0.5em;
+}
 pre.highlight {
 	margin: 1em 0em;
 	padding: 0.5em 1em;
+	overflow-x: auto;
 }
 figure.highlight {
 	background: transparent;
