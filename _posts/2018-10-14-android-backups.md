@@ -215,7 +215,7 @@ That would be very consistent with the `final_length = b.readbits(32)` in
 the traceback above...
 
 ```sh
-% { printf "\x1f\x8b\x08\x00\x00\x00\x00\x00"; tail -c +25 ../clipper2.adb; } | zcat | wc -c
+% { printf "\x1f\x8b\x08\x00\x00\x00\x00\x00"; tail -c +25 ../clipper6.adb; } | zcat | wc -c
 gzip: stdin: unexpected end of file
 3734081536
 
