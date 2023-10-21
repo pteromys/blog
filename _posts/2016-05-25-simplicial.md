@@ -50,7 +50,7 @@ actually specify their simplices as lists of vertices.
 Sometimes you want to do more than play video games.
 It being May, maybe you wanted to pick some flowers.
 
-{% include figure.html alt="A flower, not colored in." src="wedge-five-circles.png" %}
+{% include figure.html alt="A flower, not colored in." src="wedge-five-circles.png" imgextra="class=\"grayscale-invertible\"" %}
 
 This is still made of simplices
 (a point and some (curved) line segments);
@@ -88,7 +88,7 @@ a "reference simplex" and encode it as a category
 \\(\\widehat{\\Delta}^{\\mathrm{op}}\\)
 that looks like this:
 
-{% include figure.html alt="The reference simplex." src="delta-op-category.png" %}
+{% include figure.html alt="The reference simplex." src="delta-op-category.png" imgextra="class=\"grayscale-invertible\"" %}
 
 ...then we can define a delta complex to be a functor from
 \\(\\widehat{\\Delta}^{\\mathrm{op}}\\)

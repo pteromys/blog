@@ -35,7 +35,7 @@ shrinks them by the same factor in the other.
 
 {::nomarkdown}
 <figure>
-<canvas id="fig_sol3" width="256" height="256" style="border: 1px solid #000;">
+<canvas id="fig_sol3" width="256" height="256" style="border-width: 1px; border-style: solid;">
 <img itemprop="image" src="{{ site.baseurl }}/up/sol3-thumb.png" alt="Sol3 is a stack of planes." />
 </canvas>
 <figcaption>\(\Sol^3\) is a stack of planes. (Interactive)</figcaption>
@@ -56,7 +56,7 @@ the line tangent to \\(x^2 - y^2 = 1\\) at \\((\\cosh z, \\sinh z, 0)\\)
 is orthogonal to \\(\\mathcal{F}\\). This identifies \\(\\Sol^3/\\mathcal{F}\\)
 with the tangent bundle \\(T\\H^1\\) of one branch of \\(x^2 - y^2 = 1\\).
 
-{% include figure.html alt="A tangent line to a hyperbola" src="h1-tangent.svg" %}
+{% include figure.html alt="A tangent line to a hyperbola" src="h1-tangent.svg" imgextra="class=\"grayscale-invertible\"" %}
 
 Since \\(\\mathcal{F}\\) is left-invariant (being spanned by a left-invariant
 vector field), the left action of \\(\\Sol^3\\) on itself descends to
@@ -70,7 +70,7 @@ you can check that this action is given by
 \\end{align\*}
 \\]
 
-{% include figure.html alt="A diffeomorphism and the image of the q-axis" src="sinh-pq.svg" %}
+{% include figure.html alt="A diffeomorphism and the image of the q-axis" src="sinh-pq.svg" imgextra="class=\"grayscale-invertible\"" %}
 
 ## No preservation of distances or angles
 
